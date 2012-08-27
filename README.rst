@@ -156,7 +156,7 @@ trusted keys - either provided by a well known CA or the CA certificates
 having securely been deployed by systems administrators. This goes for at
 least any site that is aiming for production use.
 
-The quilty
+The guilty
 ==========
 
 The cryptographic functions are provided by the Stanford Javascript Crypto
