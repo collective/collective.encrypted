@@ -73,24 +73,24 @@ Screenshots
 
 Editing encrypted content:
 
-.. image:: collective.encrypted/master/sshot-edit.png
+.. image:: https://raw.github.com/collective/collective.encrypted/master/sshot-edit.png
 
 Querying for the passwords for two encryption tags:
 
-.. image:: collective.encrypted/master/sshot-query.png
+.. image:: https://raw.github.com/collective/collective.encrypted/master/sshot-query.png
 
 Viewing the content after the decryption has succeeded:
 
-.. image:: collective.encrypted/master/sshot-view.png
+.. image:: https://raw.github.com/collective/collective.encrypted/master/sshot-view.png
 
 Not much to see here, except information about what encrypted pages are using
 this tag:
 
-.. image:: collective.encrypted/master/sshot-tag.png
+.. image:: https://raw.github.com/collective/collective.encrypted/master/sshot-tag.png
 
 Shared settings of an encrypted page. These are automatically calculated:
 
-.. image:: collective.encrypted/master/sshot-shared.png
+.. image:: https://raw.github.com/collective/collective.encrypted/master/sshot-shared.png
 
 Shortcomings
 ============
