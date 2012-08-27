@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.encrypted">
+
+    <metal:block fill-slot="main">
+        <div id="content-core">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+        <div id="encrypted-status" class="warning"></div>
+
+        <h1 class="documentFirstHeading" id="encrypted-title" tal:content="view/label" />
+
+        <div id="encrypted-clear"></div>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+        </div>
+
+<div tal:content="view/tagsjson" id="encryptedtags-json" style="visibility:hidden;" />
+
+<div tal:replace="structure view/querykeys" />
+
+<script>
+(function($) {
+ $(document).ready(function(){
+    element = document.getElementById("form");
+    element.setAttribute("onSubmit","return false"); 
+    encrypted.prepareForDecryption("edit");
+ });
+})(jQuery);
+</script>
+ 
+    </metal:block>
+
+</html>
+

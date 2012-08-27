@@ -1,0 +1,62 @@
+
+
+#encrypted-clear {
+ clear: both;
+}
+
+#encrypted-status {
+ height: 48px;
+ width: 48px;
+ float: left;
+ margin-right: 5px;
+ position: relative;
+ top: -5px;
+}
+
+#encrypted-status.warning {
+ background: url("status-warning.png") no-repeat left;
+}
+
+#encrypted-status.ok {
+ background: url("status-ok.png") no-repeat left;
+}
+
+.encrypted_overlay {
+ display: none;
+ z-index: 10000;
+ background-color: white;
+ width: 600px;
+ border: 1px solid #666;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+ position: absolute;
+ top: 30%;
+ left: 20%;
+
+ -moz-box-shadow: 0 0 90px 5px #000;
+ -webkit-box-shadow: 0 0 90px #000;
+}
+
+.encrypted_key_list {
+ padding-bottom: 15px;
+}
+
+.encrypted_key_list label {
+  padding-right: 10px;
+  text-align: right;
+}
+
+.encrypted_key_list input {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.encrypted_key_list input.fail {
+  background-color: #FF6666;
+}
+
+.encrypted_key_list input.ok {
+  background-color: #99FF33;
+}
+

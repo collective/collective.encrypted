@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="collective.encrypted">
+
+<metal:block use-macro="context/@@ploneform-macros/form" />
+
+<div tal:replace="structure view/querykeys" />
+
+<script>
+(function($) {
+ $(document).ready(function(){
+    element = document.getElementById("form");
+    element.setAttribute("onSubmit","return encrypted.prepareForEncryption('add')"); 
+ });
+})(jQuery);
+</script>
+
+</html>
+

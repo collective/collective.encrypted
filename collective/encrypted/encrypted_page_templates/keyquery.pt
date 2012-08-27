@@ -1,0 +1,11 @@
+<div class="encrypted_overlay" id="encrypted_key_query" >
+ <h1>Please provide access keys</h1>
+ <p>You have requested the use of following encryption tags. In order to use them successfully you must enter valid encryption keys below.</p>
+ <div class="encrypted_key_list" id="encrypted_key_list">
+  <label for="abc1">Template</label>
+  <input id="abc1" class="fail" onInput="encrypted.validateKeyInput(this)" type="password" />
+ </div>
+ <div class="encrypted_action_buttons">
+  <input value="Save Keys" id="encrypted-save-keys-button" type="button" onClick="encrypted.saveKeysFromForm()" disabled />
+ </div>
+</div>

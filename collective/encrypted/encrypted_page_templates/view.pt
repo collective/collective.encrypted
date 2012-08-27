@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="collective.encrypted">
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+        <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+        <div id="encrypted-status" class="warning" tal:attributes="title view/tagsfortitle"></div>
+
+        <h1 class="documentFirstHeading" id="encrypted-title" tal:content="context/title" />
+
+        <div id="encrypted-clear"></div>
+
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <p class="documentDescription" tal:content="context/description" />
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />
+
+        <div tal:content="structure context/encryptedcontent/output" id="form-widgets-encryptedcontent" style="visibility: hidden;" />
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+        <div tal:content="context/encryptediv" id="form-widgets-encryptediv" style="visibility: hidden;" />
+        <div tal:content="view/tagsjson" id="encryptedtags-json" style="visibility:hidden;" />
+
+<div tal:replace="structure view/querykeys" />
+
+<script>
+(function($) {
+ $(document).ready(function(){
+     encrypted.prepareForDecryption("view");
+ });
+})(jQuery);
+</script>
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>
+
