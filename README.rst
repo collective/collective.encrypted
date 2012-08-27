@@ -72,19 +72,24 @@ Screenshots
 ===========
 
 Editing encrypted content:
+
 .. image:: sshot-edit.png
 
 Querying for the passwords for two encryption tags:
+
 .. image:: sshot-query.png
 
 Viewing the content after the decryption has succeeded:
+
 .. image:: sshot-view.png
 
 Not much to see here, except information about what encrypted pages are using
 this tag:
+
 .. image:: sshot-tag.png
 
 Shared settings of an encrypted page. These are automatically calculated:
+
 .. image:: sshot-shared.png
 
 Shortcomings
