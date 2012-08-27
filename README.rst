@@ -6,6 +6,7 @@ content type and related tools. The basic idea behind it is not to trust
 either server or the client to handle completely the security of content. This is
 achieved by combining simultaenously the following requisities for
 successfully handling content:
+
 1. server side content access right checking
 2. client side decryption and encryption of the data that passes the previous
 
