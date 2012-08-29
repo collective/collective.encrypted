@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 1.0
 Name: collective.encrypted
 Version: 1.0
 Summary: Client-side encrypted content types and associated tools
@@ -6,12 +6,7 @@ Home-page: http://svn.plone.org/svn/collective/
 Author: UNKNOWN
 Author-email: UNKNOWN
 License: GPL
-Description: Introduction
-        ============
-        
-        
-        
-        This product may contain traces of nuts.
+Description: Collective.encrypted is a prototype for implementing client side encrypted content type and related tools. 
         
         Changelog
         =========

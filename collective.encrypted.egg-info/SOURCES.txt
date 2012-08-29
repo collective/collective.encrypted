@@ -12,6 +12,9 @@ collective.encrypted.egg-info/paster_plugins.txt
 collective.encrypted.egg-info/requires.txt
 collective.encrypted.egg-info/top_level.txt
 collective/encrypted/__init__.py
+collective/encrypted/delete.py
 collective/encrypted/encrypted_page.py
 collective/encrypted/encryption_tag.py
+collective/encrypted/events.py
+collective/encrypted/sharing.py
 collective/encrypted/tests.py
