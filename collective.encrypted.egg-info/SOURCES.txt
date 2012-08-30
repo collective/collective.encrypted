@@ -1,4 +1,3 @@
-README.txt
 setup.cfg
 setup.py
 collective/__init__.py
